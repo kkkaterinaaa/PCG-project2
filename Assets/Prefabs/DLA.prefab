@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2575630396457064333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6661557653014136073}
+  - component: {fileID: 5048194397818983613}
+  m_Layer: 0
+  m_Name: DLA
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6661557653014136073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575630396457064333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5048194397818983613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575630396457064333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4544cbff62855497a8438477b55e61c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voronoiGenerator: {fileID: 935440437222187436, guid: af430e1a5bd6c4a1cbf0b51c3c4c1246, type: 3}
+  drawVines: 1
+  segmentBounds: {x: 0, y: 0}
+  vineSettings:
+    segmentWidth: 0.1
+    widthTaper: 0.97
+    curveResolutionMultiplier: 20
+    noiseScale: 0.5
+    controlPointRandomness: 0.2
+    midpointOffset: 0.1
+    growthDelay: 0.01
+  floralSettings:
+    minBranchSteps: 10
+    maxBranchSteps: 20
+    branchWidth: 0.2
+    branchTaper: 0.9
+    branchOffsetScale: 0.5
+    minClusterCount: 3
+    maxClusterCount: 6
+    minClusterScale: 0.03
+    growthDelay: 0.02
+    branchingChance: 0.1
